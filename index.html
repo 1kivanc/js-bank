@@ -1,0 +1,100 @@
+<html>
+<head>
+  <title>HiddenW Bank</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script type="module" src="script.js"></script>
+  
+</head>
+<body>
+  <canvas id="Matrix"></canvas>
+
+
+
+  <div id = "popup"class="popup">
+    <div class="popup-content">
+        <h1>Privacy policy</h1>
+        <hr style="margin-bottom: 20px;">
+        <ul>
+          <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta velit provident blanditiis molestias aspernatur. Animi et totam inventore blanditiis eligendi officiis tempora explicabo voluptatem? Ullam animi autem est. Pariatur, nihil!</li>
+          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates voluptas neque dolorem.</li>
+          <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt obcaecati, eum beatae similique dolor dignissimos ab doloribus minima, sit illum magnam harum asperiores.</li>
+          <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod ad numquam doloremque, perspiciatis exercitationem illo vero dolorem? Similique, distinctio fugit consequuntur aperiam nihil quas temporibus ea numquam animi voluptatibus dolor, labore corporis. Labore vitae recusandae maxime natus odit dicta, quaerat ut quos architecto corrupti? Et minima saepe autem nihil explicabo?</li>
+        </ul>
+      </div>
+      <div class="popupFooter">
+        <input type="checkbox" id="iagree" name="iagree" value="I agree terms" style="width: 1rem;">
+        <label for="iagree">I agree</label>
+      </div>
+  </div>
+ 
+  <div class="container">
+    <div class="information">
+      <i id="popupBtn" class="fa-solid fa-circle-info"></i>
+    </div>
+    <h1>Hidden<span style="color:lightgreen ;">W</span> Bank</h1>
+    <i class="fa-sharp fa-solid fa-building-columns bank"></i>
+    <p>secure and end-to-end encrypted</p>
+    <label id="ErrMsg"></label>
+
+    <div id="login-portal">
+      <h3>Login</h3><br>
+      <label for="lAccNo">Account No:</label><br>
+      <input type="text" id="lAccNo"  required><br>
+      <label for="lAccPin">Pin Code:</label><br>
+      <input type="password" id="lAccPin" required><br>
+      <button id="login-btn" >Login</button><br>
+      <label id="ToReg" class="switch">Don't have an account? Register</label>
+    </div>
+
+    <div id="register-portal">
+      <h3>Register</h3><br>
+      <label>Name:</label><br>
+      <input type="text" id="rAccName"  required><br>
+      <label>Account no:</label><br>
+      <input type="text" id="rAccNo"  required><br>
+      <label>Pin no:</label><br>
+      <input type="password" id="rAccPin" required><br>
+      <label>Confirm Pin no:</label><br>
+      <input type="password" id="rConAccPin"  required><br>
+      <button id="register-btn" >Register</button><br>
+      <label id="ToLogin" class="switch">Don't have an account? Login</label>
+    </div>
+
+    <div id="portal">
+      <label id="userName"><span style="color:white ;">Hi </span></label><br>
+      <label id="totalBal">....</label><br>
+
+      <div id="depoist-portal">
+        <h4>Depoist</h4><br>
+        <label>Enter Amount:</label><br>
+        <input type=text id="depoist-amt"  required><br>
+        <button id="dep-submit">Depoist</button><br>
+      </div>
+
+      <div id="withdraw-portal">
+        <h4>withdraw</h4><br>
+        <label>Enter Amount:</label><br>
+        <input type=text id="withdraw-amt"  required><br>
+        <button id="wit-submit">Withdraw</button><br>
+      </div>
+
+      <div id="transfer-portal">
+        <h4>Transfer</h4><br>
+        <label>Enter Amount:</label><br>
+        <input type=text id="transfer-amt"  required><br>
+        <label>Enter transfer Account no:</label><br>
+        <input type=text id="transfer-acc-no"  required><br>
+        <button id="trans-submit">Transfer</button><br>
+      </div>
+
+      <div id="options">
+      <h3>Please select an option</h3><br>
+      <button id="depoist-btn">Depoist</button>
+      <button id="withdraw-btn">Withdraw</button>
+      <button id="transfer-btn">Transfer</button>
+      </div>
+    </div>
+
+    </div>
+  </div>
